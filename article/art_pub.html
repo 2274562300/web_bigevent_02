@@ -12,7 +12,8 @@
     <div class="layui-card">
         <div class="layui-card-header">文章发布</div>
         <div class="layui-card-body">
-            <form class="layui-form" id="form-pub">
+            <form class="layui-form" id="form-pub" lay-filter="form-edit">
+              <input type="hidden" name="Id">
                 <!-- 文章标题 -->
                 <div class="layui-form-item">
                   <label class="layui-form-label">文章标题</label>

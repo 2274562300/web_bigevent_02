@@ -58,6 +58,10 @@ $(function(){
             }
         })
     }
+    //编辑
+    $("tbody").on("click","#bianji",function(){
+        location.href="/article/art_pub.html?id="+$(this).attr('data-id')
+    })
     //筛选功能
     $("#form-search").on("submit",function(e){
         e.preventDefault();
